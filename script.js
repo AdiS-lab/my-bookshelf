@@ -1,5 +1,5 @@
 const bookSearch = document.getElementById("bookSearch");
-const searchButton = document.querySelector(".searching");
+const searchButton = document.querySelector(".actionBtn");
 let resultArea = document.querySelector(".bookResult");
 let loading = document.getElementById("loading");
 let bottomBar = document.querySelector("bottomBar");
@@ -137,8 +137,8 @@ function handleSearch() {
 
       const addShelf = document.createElement("button");
       addShelf.textContent = "Add to Shelf";
-      addShelf.classList.add("addShelf");
-      addShelf.classList.add("searching");
+      addShelf.classList.add("shelfAdd");
+      addShelf.classList.add("actionBtn");
 
       // addShelf function
       addShelf.addEventListener("click", () => {
@@ -168,8 +168,8 @@ function handleSearch() {
 
       const clear = document.createElement("button");
       clear.textContent = "Clear";
-      clear.classList.add("clear");
-      clear.classList.add("searching");
+      clear.classList.add("resultClear");
+      clear.classList.add("actionBtn");
       loading.innerHTML = ""
 
       // clear function

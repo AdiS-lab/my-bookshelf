@@ -27,7 +27,7 @@ body{
 
     background-color:#252525;
     display: grid;
-    grid-template-columns: 800px 1fr;
+    grid-template-columns: 550px 1fr;
     grid-template-rows: 100%;
     grid-template-areas: 
         "bookPanel" "bookShelfArea"
@@ -86,7 +86,7 @@ h1{
     grid-template-areas:
         "bookCover bookText bookText"
         "bookCover bookText bookText"
-        "bookCover addShelf clear" ;
+        "bookCover shelfAdd resultClear" ;
     gap:5px;
         
 }
@@ -176,7 +176,7 @@ h1{
     font-style:italic;
     line-height:5px
 }
-.addShelf{
+.shelfAdd{
     
     box-sizing: border-box;
     grid-area:addShelf;
@@ -186,7 +186,7 @@ h1{
     margin-top:50px;   
 
 }
-.clear{
+.resultClear{
     margin-right:10px;
     box-sizing: border-box;
     grid-area:clear;
@@ -230,7 +230,7 @@ h1{
     color:#444444;
 }
 
-.searching{
+.actionBtn{
     height:30px;
     padding:0 14px;
     margin-left:10px;
@@ -242,7 +242,7 @@ h1{
     font-size:1.1em;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
-.searching:hover{
+.actionBtn:hover{
     cursor:pointer;
     color:#e8602a;
     background-color:rgba(232, 96, 42, 0.1);
