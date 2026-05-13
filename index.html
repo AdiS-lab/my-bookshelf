@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "styles.css">
+        <meta name = "author" content = "Adi Shankar">
+        <meta name = "keywords" content = "HTML, CSS, JavaScript">
+        <meta name = "description" content = "Your personal bookshelf">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+        <title>Your Personal Bookshelf</title>
+<!-- remember version number and that JSON is {key: values} -->
+    </head>
+
+    <body>
+        <dialog class="notes" id="notes">
+            <div class="modalTop">
+                <p class="modalTitle" id="modalTitle"></p>
+                <button id="closeBtn" commandfor="notes" command="close" class="popButton">✕</button>
+            </div>
+            <span class="modalHint">esc to close · auto-saved</span>
+            <textarea class="notePad" autocomplete="off" placeholder="start writing..."></textarea>
+            <div class="modalBottom">
+                <button commandfor="notes" command="close" id="removeBtn" class="removeBtn">remove book</button>
+            </div>
+        </dialog>
+        <div class = "dragBar" style = "width:5px; height:100vh; opacity:0.2"></div>
+        <div class = "page">
+            <aside class ="sideBar">
+                <div class = "main">
+                    <div class = "search">
+                        <h1>My Personal Bookshelf</h1>
+                        <label for = "bookSearch"></label>
+                        <input type = "text" id = "bookSearch" placeholder = "Harry Potter" autocomplete = "off">
+                        <button class = "searching">search</button>
+                        <p id = "loading" style = "color:#dcddde"></p>
+                    </div>
+                    <div class = "resultArea">
+                    </div>
+
+                </div>
+            </aside>
+            <div class = "bookShelfArea" style = "width:100%; height:100%">
+                <div class = "bookShelf" style = "width:100%; height:55%"></div>
+                <div class="shelf">
+                    <div class="shelfSurface"></div>
+                    <div class="shelfFront"></div>
+                </div>
+                <!-- <div class = "shelfReal" style = "width:100%; height:100%">
+                    <div id = "woodPlank">Hey THere </div> 
+                </div>
+            </div> -->
+
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
