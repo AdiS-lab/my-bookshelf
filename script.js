@@ -1,6 +1,6 @@
 const bookSearch = document.getElementById("bookSearch");
 const searchButton = document.querySelector(".searching");
-let resultArea = document.querySelector(".resultArea");
+let resultArea = document.querySelector(".bookResult");
 let loading = document.getElementById("loading");
 let bottomBar = document.querySelector("bottomBar");
 const bookShelf = document.querySelector(".bookShelf");
