@@ -30,13 +30,12 @@ body{
     grid-template-columns: 800px 1fr;
     grid-template-rows: 100%;
     grid-template-areas: 
-        "sideBar"
-        "bookShelfArea"
+        "sideBar" "bookShelfArea"
 }
 
 /* sideBar style  */
 .sideBar{
-    grid-area: "sideBar";
+    grid-area: sideBar;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -257,7 +256,7 @@ h1{
 /* bookShelf style */
 .bookShelfArea{
     position:relative;
-    grid-area: "bookShelfArea";
+    grid-area: bookShelfArea;
     margin:0;
     padding:0;
     overflow:hidden;
